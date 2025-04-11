@@ -1,0 +1,8 @@
+{
+  "siteName": "HydraSafe CMS",
+  "siteUrl": "",
+  "apiUrl": "http://localhost:5000",
+  "allowRegistration": true,
+  "setupCompleted": true,
+  "setupDate": "2025-04-10T22:35:14.350Z"
+}

@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #111319;
+  --foreground: #FFFFFF;
+  --primary: #00D2FF;
+  --secondary: #E4E5E7;
+  --accent: #FF0000;
+  --border: #2C2C2C;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(44, 44, 44, 0.5);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 210, 255, 0.5);
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 210, 255, 0.8);
+}
+
+/* Input styles */
+input, select, textarea {
+  background-color: #111319;
+  border: 1px solid #2C2C2C;
+  border-radius: 4px;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #00D2FF;
+  box-shadow: 0 0 0 1px rgba(0, 210, 255, 0.2);
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #00D2FF;
+  color: #000000;
+  font-weight: 500;
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: rgba(0, 210, 255, 0.9);
+}
+
+/* Card styles */
+.card {
+  background: #1A1E24;
+  border: 1px solid #2C2C2C;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding: 0.75rem;
+  font-weight: 500;
+  border-bottom: 1px solid #2C2C2C;
+}
+
+td {
+  padding: 0.75rem;
+  border-bottom: 1px solid rgba(44, 44, 44, 0.5);
+}
+
+/* Status indicators */
+.status-draft {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: #F59E0B;
+  font-weight: 400;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+}
+
+.status-published {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #10B981;
+  font-weight: 400;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+}
+
+.status-archived {
+  background-color: rgba(156, 163, 175, 0.1);
+  color: #9CA3AF;
+  font-weight: 400;
+  border: 1px solid rgba(156, 163, 175, 0.3);
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+}
